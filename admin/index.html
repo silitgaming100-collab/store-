@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owner Dashboard | KyoStore</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b0b14;color:#f5f3ff;font:15px Arial,sans-serif}
+main{max-width:900px;margin:auto;padding:24px 16px}
+header,.panel,.item{background:#171726;border:1px solid #302e46;border-radius:16px;padding:18px;margin-bottom:16px}
+h1{margin:0 0 8px;font-size:27px}
+p{color:#aaa8c2;line-height:1.6}
+.logo{color:#a78bfa}
+label{display:block;margin:14px 0 7px}
+input,textarea,select{width:100%;padding:12px;background:#10101c;color:white;border:1px solid #39364f;border-radius:10px;font-size:15px}
+button,.btn{display:inline-block;border:0;border-radius:10px;padding:12px 16px;background:linear-gradient(120deg,#8b5cf6,#4f8cff);color:white;font-weight:bold;text-decoration:none;cursor:pointer;margin-top:14px}
+.secondary{background:#29283c}
+.warning{background:#302419;border:1px solid #77552e;padding:13px;border-radius:10px;color:#ffdfa5;line-height:1.6}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1><span class="logo">Kyo</span>Store Owner</h1>
+<p>Dashboard pengelolaan toko digital.</p>
+<a class="btn secondary" href="../">Lihat toko pembeli</a>
+</header>
+
+<section class="panel">
+<h2>Akses Owner</h2>
+<div class="warning">
+Dashboard ini belum terhubung ke autentikasi Supabase. Halaman ini belum memverifikasi identitas owner dan belum boleh digunakan untuk mengubah produk atau transaksi nyata.
+</div>
+<h3>Langkah aktivasi</h3>
+<p>1. Aktifkan login Google/email melalui Supabase Auth.</p>
+<p>2. Verifikasi role owner di database dan backend.</p>
+<p>3. Aktifkan kebijakan RLS agar hanya owner yang dapat mengelola produk.</p>
+<p>4. Hubungkan dashboard ke database untuk menambah produk beserta foto.</p>
+</section>
+
+<section class="panel">
+<h2>Fitur yang akan diaktifkan</h2>
+<div class="item">📦 Tambah produk dan foto</div>
+<div class="item">💰 Atur harga dan kategori</div>
+<div class="item">🧾 Kelola pesanan pelanggan</div>
+<div class="item">📲 Verifikasi top up dan pembayaran</div>
+<p>Fitur pengelolaan akan diaktifkan setelah autentikasi dan izin database terpasang dengan benar.</p>
+</section>
+</main>
+</body>
+  </html>
+  
